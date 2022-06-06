@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    background-color: rgb(46 83 126);
+    text-align: center;
+    color: rgb(204, 218, 235);
+}

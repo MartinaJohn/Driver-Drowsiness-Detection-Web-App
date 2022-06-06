@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+  }
+
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 50%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover{
+    color: grey;
+}
+
+.background{
+  background: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.pimg1{
+    position:relative;
+    opacity:1;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+  }
+
+  .pimg1{
+    background:linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url("../bg.gif");
+    /* background: black; */
+    background-repeat: no-repeat;
+    min-height:100%;
+    background-size: cover; 
+  }
+
+  .ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:justify-all;
+    color:#000;
+    font-size:25px;
+    letter-spacing:6px;
+    text-transform:uppercase;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 250px;
+  }
+
+  .ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+  }
+
+  .ptext .border.trans{
+    background-color:transparent;
+  }
+
+  @media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+      background-attachment:scroll;
+    }
+  }
+  .l-div{
+      width:280px;
+      height: 100px;
+      background-color: none;
+      /*position: relative;*/
+      animation: movingl 3s;
+  }
+  .r-div{
+      width:310px;
+      height: 100px;
+      background-color: none;
+      position: relative;
+      animation: movingr 3s;
+  }
+  #div1{animation-timing-function: linear;}
+  #div2{animation-timing-function: linear;}
+  #div3{animation-timing-function: linear;}
+  @keyframes movingl
+  {
+      from{left:-500px;}
+      to{left:-250px;}
+  }	
+  @keyframes movingr
+  {
+      from{left:500px;}
+      to{left:-100px;}
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }		
+  a {
+    position: relative;
+    padding: 10px 40px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 40px;
+  }
+
+  a span {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial;
+    letter-spacing: 5px;
+    z-index: 1;
+  }
+
+  a .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: rgb(115, 177, 240);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+  }
+
+  a .liquid::after,
+  a .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #000;
+  }
+
+  a .liquid::before {
+    
+    border-radius: 45%;
+    background: rgba(31, 44, 84, 1);
+    animation: animate 5s linear infinite;
+  }
+
+  a .liquid::after {
+    
+    border-radius: 40%;
+    background: rgba(31, 44, 84, .5);
+    animation: animate 10s linear infinite;
+  }
+
+  a:hover .liquid{
+    top: -120px;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -75%) rotate(360deg);
+    }
+  }
+      .container1 {
+       position: absolute;
+       -webkit-transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
+       left: 50%;
+       top: 50%;
+       font-family: 'Raleway', sans-serif;
+  }
+   .title {
+       font-weight: 800;
+       color: transparent;
+       font-size: 55px;
+       background: url("../bg.gif") repeat;
+       background-position: 40% 50%;
+       background-clip: text;
+       position: relative;
+       text-align: center;
+       line-height: 90px;
+       letter-spacing: 0.5px;
+  }
+   .subtitle {
+       display: block;
+       text-align: center;
+       text-transform: uppercase;
+       padding-top: 10px;
+       color: rgb(24 27 30);
+  }
+
+  
+  
