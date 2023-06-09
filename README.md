@@ -4,7 +4,6 @@ This web application detects the drowsiness of driver and produces sound alarms 
 
 ## Video Demo
 https://youtu.be/nD6Njw068o0
-https://drive.google.com/file/d/1uP0EFiXg52EN8VevSup1r7MyjDWRQMQg/view?usp=sharing
 
 ## Features
 
