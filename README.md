@@ -8,7 +8,7 @@ https://youtu.be/nD6Njw068o0
 ## Features
 
 - Detects the drowsiness of drivers by assessing the drowsy eyes and yawning mouth
-- Produces custon sound alarms based on the drowsy condition
+- Produces custom sound alarms based on the drowsy condition
 
 ## Tech Stack
 
